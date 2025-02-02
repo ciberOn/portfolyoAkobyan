@@ -1,0 +1,35 @@
+body{
+    background-color: #ff240c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.btn{
+    padding:50px;
+    border-radius: 52%;
+}
+.border{
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    background-color: black;
+    width: 3500px;
+    height: 350px;
+    border-radius: 52%;
+    animation-name: border;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes border {
+    from{
+        background-color: white;
+        transform: rotateZ(15deg);
+        transform: scale(1.1);
+    }
+    to{
+        transform: rotateZ(15deg);
+        background-color: black;
+        transform: scale(1.2);
+    }
+} 
